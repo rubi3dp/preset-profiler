@@ -3,6 +3,8 @@
 **An OrcaSlicer plugin that shows all of your own printer, filament and process presets at a glance – with checks, change tracking and printable data sheets.**
 Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigenen Profile – [deutsche Kurzfassung unten](#deutsch).
 
+![Preset Profiler docked in OrcaSlicer](docs/img/overview.png)
+
 > Version 0.9.0 – pre-release. Tested on macOS. Windows and Linux testers welcome (see [Feedback](#feedback)).
 
 ## What it does
@@ -14,6 +16,24 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 - **Export** – CSV files and an HTML overview.
 
 **Read-only.** The plugin never changes presets, never goes online and only writes to folders you choose. It is not a preset editor – keep editing in Orca; Preset Profiler is for getting your preset data out quickly and keeping track of it.
+
+## Screenshots
+
+**Matrix** – which filament fits which printer, K = calibrated preset
+![Matrix](docs/img/matrix.png)
+
+**Details** – click a row for all values; ² marks Standard / High Flow hotend values
+![Details](docs/img/details.png)
+
+**Checks** – "Issues only" filters presets with findings
+![Checks](docs/img/checks.png)
+
+**Changes** – values that changed since the last accepted state
+![Changes](docs/img/changes.png)
+
+**Data sheet** – base + dimensional calibration, printable or as PDF
+
+<img src="docs/img/datasheet.png" alt="Data sheet" width="450">
 
 ## Install
 
