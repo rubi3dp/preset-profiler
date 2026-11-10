@@ -37,7 +37,7 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 
 ## Install
 
-1. Download [`preset_profiler.py`](preset_profiler.py) (or the file from the latest release).
+1. Download `preset_profiler.py` from the [latest release](../../releases/latest).
 2. In OrcaSlicer 2.5+: **Plugins › Install local plugin** and select the file.
 3. Restart Orca, then run **Plugins › Preset Profiler – Settings** to set folders and options.
 4. After setting a folder, restart Orca once more and confirm the folder access prompt.
