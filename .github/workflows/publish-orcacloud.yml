@@ -1,0 +1,42 @@
+# Bei jedem veröffentlichten GitHub-Release:
+# 1. preset_profiler.py als Download an das Release hängen
+# 2. dieselbe Datei als preset_profiler_any.py zu Orca Cloud hochladen
+#    (Tag = Version, Release-Notiz = Changelog)
+name: Publish to Orca Cloud
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write   # Datei an das Release hängen
+  id-token: write   # Anmeldung bei Orca Cloud (OIDC, ohne Passwort)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.release.tag_name }}
+          persist-credentials: false
+
+      - name: Versionsnummer prüfen
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          ver=$(sed -n 's/^VERSION = "\(.*\)"$/\1/p' preset_profiler.py)
+          echo "Tag: $tag · Datei: $ver"
+          if [ "$tag" != "$ver" ]; then
+            echo "::error::Release-Tag v$tag passt nicht zu VERSION \"$ver\" in preset_profiler.py"
+            exit 1
+          fi
+
+      - name: Datei an das Release hängen
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$GITHUB_REF_NAME" preset_profiler.py --clobber --repo "$GITHUB_REPOSITORY"
+
+      - name: Zu Orca Cloud hochladen
+        env:
+          CHANGELOG: ${{ github.event.release.body }}
+        run: python3 .github/scripts/publish_orcacloud.py

@@ -37,6 +37,10 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 
 ## Install
 
+**Orca Cloud:** in OrcaSlicer 2.5+ open **Plugins › Install plugin**, search for *Preset Profiler* and subscribe – updates come automatically.
+
+**Manual:**
+
 1. Download `preset_profiler.py` from the [latest release](../../releases/latest).
 2. In OrcaSlicer 2.5+: **Plugins › Install local plugin** and select the file.
 3. Restart Orca, then run **Plugins › Preset Profiler – Settings** to set folders and options.
