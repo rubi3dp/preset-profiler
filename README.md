@@ -14,13 +14,13 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 - **Changes** – shows which values changed since your last accepted state, e.g. after a vendor/system profile update silently changed inherited values.
 - **Data sheets** – one sheet per filament (base calibration + dimensional calibration), readable on a tablet, printable as A4/A5 or PDF, with a notes field.
 - **Export** – CSV files and an HTML overview.
-- **Bambu Studio** – optionally also reads your own Bambu Studio presets (read-only, marked B in Bambu green).
+- **Other slicers** – optionally also reads your own Bambu Studio presets (read-only). The first column shows the source (O = OrcaSlicer, B = Bambu Studio), marks use the slicer's colour, and the buttons OrcaSlicer / Bambu Studio / All switch the view. More Orca-based slicers can be added later.
 
 **Read-only.** The plugin never changes presets, never goes online and only writes to folders you choose. It is not a preset editor – keep editing in Orca; Preset Profiler is for getting your preset data out quickly and keeping track of it.
 
 ## Screenshots
 
-**Matrix** – which filament fits which printer, K = calibrated preset
+**Matrix** – which filament fits which printer, K = calibrated preset; O / B = source slicer
 ![Matrix](docs/img/matrix.png)
 
 **Details** – click a row for all values; ² marks values per hotend variant (e.g. Standard / High Flow)
@@ -44,7 +44,7 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 
 1. Download `preset_profiler.py` from the [latest release](../../releases/latest).
 2. In OrcaSlicer 2.5+: **Plugins › Install local plugin** and select the file.
-3. Restart Orca, then run **Plugins › Preset Profiler – Settings** to set folders and options.
+3. Restart Orca, then open the settings – via **⚙ Settings** in the overview or **Plugins › Preset Profiler – Settings** – to set folders and options.
 4. After setting a folder, restart Orca once more and confirm the folder access prompt.
 
 Full guide: [English](docs/guide-en.md) · [Deutsch](docs/anleitung-de.md)
@@ -61,10 +61,10 @@ GPL-3.0 – see [LICENSE](LICENSE). © Ruben Etzkorn · rubi3dp
 
 ## Deutsch
 
-**Preset Profiler** zeigt alle eigenen Drucker-, Filament- und Prozessprofile übersichtlich in einem Fenster in Orca – mit Prüfungen auf typische Fehler, einer Liste der Änderungen (z. B. nach Updates der Systemprofile), Datenblättern je Filament und CSV/HTML-Export. Das Plugin liest nur, ändert keine Profile und geht nicht ins Internet.
+**Preset Profiler** zeigt alle eigenen Drucker-, Filament- und Prozessprofile übersichtlich in einem Fenster in Orca – mit Prüfungen auf typische Fehler, einer Liste der Änderungen (z. B. nach Updates der Systemprofile), Datenblättern je Filament und CSV/HTML-Export. Auf Wunsch liest es zusätzlich die eigenen Profile aus Bambu Studio (Kennzeichnung B, Orca-Profile O). Das Plugin liest nur, ändert keine Profile und geht nicht ins Internet.
 
-Installation: `preset_profiler.py` herunterladen, in OrcaSlicer 2.5+ über **Plugins › Install local plugin** installieren, Orca neu starten, unter **Preset Profiler – Einstellungen** Ordner festlegen, Orca erneut starten und die Ordner-Abfrage bestätigen.
+Installation: über **Plugins › Install plugin** (Orca Cloud) abonnieren – oder `preset_profiler.py` herunterladen und über **Plugins › Install local plugin** installieren. Orca neu starten, über **⚙ Einstellungen** in der Übersicht Ordner festlegen, Orca erneut starten und die Ordner-Abfrage bestätigen.
 
 Ausführliche Anleitung: [docs/anleitung-de.md](docs/anleitung-de.md)
 
-Version 0.9.0 (Vorabversion), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).
+Version 0.9.4 (Vorabversion), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).
