@@ -1,11 +1,11 @@
 # Preset Profiler
 
-**An OrcaSlicer plugin that shows all of your own printer, filament and process presets at a glance – with checks, change tracking and printable data sheets.**
+An OrcaSlicer plugin that shows all of your own printer, filament and process presets at a glance – from OrcaSlicer **AND** Bambu Studio, with checks, change tracking and printable data sheets. Support for further Orca- and Bambu-based slicers is in preparation.
 Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigenen Profile – [deutsche Kurzfassung unten](#deutsch).
 
 ![Preset Profiler docked in OrcaSlicer](docs/img/overview.png)
 
-> Version 0.9.4 – pre-release. Tested on macOS. Windows and Linux testers welcome (see [Feedback](#feedback)).
+> Version 0.9.4 – beta. Tested on macOS. Windows and Linux testers welcome (see [Feedback](#feedback)).
 
 ## What it does
 
@@ -61,10 +61,10 @@ GPL-3.0 – see [LICENSE](LICENSE). © Ruben Etzkorn · rubi3dp
 
 ## Deutsch
 
-**Preset Profiler** zeigt alle eigenen Drucker-, Filament- und Prozessprofile übersichtlich in einem Fenster in Orca – mit Prüfungen auf typische Fehler, einer Liste der Änderungen (z. B. nach Updates der Systemprofile), Datenblättern je Filament und CSV/HTML-Export. Auf Wunsch liest es zusätzlich die eigenen Profile aus Bambu Studio (Kennzeichnung B, Orca-Profile O). Das Plugin liest nur, ändert keine Profile und geht nicht ins Internet.
+**Preset Profiler** zeigt alle eigenen Drucker-, Filament- und Prozessprofile übersichtlich in einem Fenster in Orca – mit Prüfungen auf typische Fehler, einer Liste der Änderungen (z. B. nach Updates der Systemprofile), Datenblättern je Filament und CSV/HTML-Export. Erfasst die eigenen Profile aus OrcaSlicer **UND** Bambu Studio (Kennzeichnung O / B); weitere mit Orca bzw. Bambu Studio verwandte Slicer sind in Vorbereitung. Das Plugin liest nur, ändert keine Profile und geht nicht ins Internet.
 
 Installation: über **Plugins › Install plugin** (Orca Cloud) abonnieren – oder `preset_profiler.py` herunterladen und über **Plugins › Install local plugin** installieren. Orca neu starten, über **⚙ Einstellungen** in der Übersicht Ordner festlegen, Orca erneut starten und die Ordner-Abfrage bestätigen.
 
 Ausführliche Anleitung: [docs/anleitung-de.md](docs/anleitung-de.md)
 
-Version 0.9.4 (Vorabversion), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).
+Version 0.9.4 (Beta), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).

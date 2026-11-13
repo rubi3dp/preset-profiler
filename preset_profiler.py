@@ -1,7 +1,7 @@
 # /// script
 # [tool.orcaslicer.plugin]
 # name = "Preset Profiler"
-# description = "Overview of your own printer, filament and process presets: bindings, checks, changes after updates, data sheets, CSV/HTML export. Read-only. / Übersicht der eigenen Profile: Zuordnung, Prüfungen, Änderungen, Datenblätter, Export. Liest nur."
+# description = "Overview of your own printer, filament and process presets from OrcaSlicer AND Bambu Studio: bindings, checks, changes after updates, data sheets, CSV/HTML export. Read-only. / Übersicht der eigenen Profile aus OrcaSlicer UND Bambu Studio: Zuordnung, Prüfungen, Änderungen, Datenblätter, Export. Liest nur."
 # author = "Ruben Etzkorn · rubi3dp.de"
 # version = "0.9.4"
 # ///
