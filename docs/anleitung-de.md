@@ -49,7 +49,7 @@ Plugins › **Preset Profiler – Einstellungen** ausführen oder in der Übersi
 
 Nach dem Ändern eines Ordners **Orca neu starten** und die Abfrage zum Ordnerzugriff bestätigen. Orca vergibt Ordnerfreigaben nur beim Start.
 
-**Bambu Studio:** Studio-Profile erscheinen mit der Kennzeichnung „Studio“ (Filter „Alle Quellen“). Zuordnung und Prüfungen beziehen sich nur auf Studio-Drucker. Den Pressure Advance speichert Studio nicht im Filamentprofil – das Plugin liest ihn aus einem `M900 K…` im Filament-Start-G-Code. Studio kennt Schrumpf nur für XY.
+**Bambu Studio:** Studio-Profile sind grün gekennzeichnet (Kärtchen „Studio“, Streifen am Zeilenanfang). Mit den Knöpfen Alle / OrcaSlicer / Bambu Studio lässt sich die Ansicht umschalten; die Wahl wird gemerkt. Zuordnung und Prüfungen beziehen sich nur auf Studio-Drucker. Den Pressure Advance speichert Studio nicht im Filamentprofil – das Plugin liest ihn aus einem `M900 K…` im Filament-Start-G-Code. Studio kennt Schrumpf nur für XY.
 
 ## Das Fenster
 
