@@ -5,7 +5,7 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 
 ![Preset Profiler docked in OrcaSlicer](docs/img/overview.png)
 
-> Version 0.9.4 – beta. Tested on macOS. Windows and Linux testers welcome (see [Feedback](#feedback)).
+> Version 0.9.5 – beta. Tested on macOS. Windows and Linux testers welcome (see [Feedback](#feedback)).
 
 ## What it does
 
@@ -67,4 +67,4 @@ Installation: über **Plugins › Install plugin** (Orca Cloud) abonnieren – o
 
 Ausführliche Anleitung: [docs/anleitung-de.md](docs/anleitung-de.md)
 
-Version 0.9.4 (Beta), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).
+Version 0.9.5 (Beta), getestet auf macOS. Rückmeldungen gern als [Issue](../../issues).
