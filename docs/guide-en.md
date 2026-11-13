@@ -49,7 +49,7 @@ Run Plugins › **Preset Profiler – Settings** (shown as “Einstellungen” w
 
 After changing a folder, **restart Orca** and confirm the folder access prompt. Orca only grants folder access at start.
 
-**Bambu Studio:** Studio presets are marked green (“Studio” tag, stripe at the start of the row). The buttons All / OrcaSlicer / Bambu Studio switch the view; the choice is remembered. Bindings and checks refer to Studio printers only. Studio does not store pressure advance in the filament preset – the plugin reads it from an `M900 K…` line in the filament start G-code. Studio only has XY shrinkage.
+**Bambu Studio:** The first column shows the source: O = OrcaSlicer, B = Bambu Studio. Marks (cal, printers, K) use the colour of the respective slicer. The buttons All / OrcaSlicer / Bambu Studio switch the view; the choice is remembered. Bindings and checks refer to Studio printers only. Bambu Studio determines pressure advance automatically – Studio presets therefore show “auto”. Studio only has XY shrinkage.
 
 ## The window
 

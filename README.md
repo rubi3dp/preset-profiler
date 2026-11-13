@@ -14,7 +14,7 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 - **Changes** – shows which values changed since your last accepted state, e.g. after a vendor/system profile update silently changed inherited values.
 - **Data sheets** – one sheet per filament (base calibration + dimensional calibration), readable on a tablet, printable as A4/A5 or PDF, with a notes field.
 - **Export** – CSV files and an HTML overview.
-- **Bambu Studio** – optionally also reads your own Bambu Studio presets (read-only, tagged “Studio”).
+- **Bambu Studio** – optionally also reads your own Bambu Studio presets (read-only, marked B in Bambu green).
 
 **Read-only.** The plugin never changes presets, never goes online and only writes to folders you choose. It is not a preset editor – keep editing in Orca; Preset Profiler is for getting your preset data out quickly and keeping track of it.
 
