@@ -64,7 +64,7 @@ Plugins › **Preset Profiler** ausführen (oder automatisch beim Start). Das Fe
   - gepunktet = Systemdrucker ohne eigenes Druckerprofil
   - rot durchgestrichen = gebundener Drucker existiert nicht mehr
   - nur Modellname (z. B. „P1S“) = gilt für alle Düsen dieses Modells (Bedingung `printer_model == "…"`)
-- **Braune Werte mit ²** = zwei Werte (Standard-Hotend / High-Flow-Hotend). Angezeigt wird der erste, Maus drauf zeigt beide.
+- **Braune Werte mit ²** = mehrere Werte je Hotend-Variante (z. B. Standard / High Flow; in Bambu Studio bis zu sechs). Angezeigt wird der erste, Maus drauf zeigt alle mit Variantennamen.
 - **↻ Neu einlesen** liest die Profile neu ein. Nach dem Speichern eines Profils aktualisiert sich die Übersicht von selbst.
 
 ## Prüfungen
@@ -82,8 +82,8 @@ Plugins › **Preset Profiler** ausführen (oder automatisch beim Start). Das Fe
 | KW | Korrekturwerte gesetzt (Schrumpf ≠ 100 % bzw. Loch-/Konturkorrektur ≠ 0) |
 | K? | kal-Profil ohne Korrekturwerte |
 | KN | Korrekturwerte ohne kal-Zusatz im Namen |
-| HU | Hotend unklar – zwei Varianten, aber kein `Hotend:` in der Notiz |
-| HW | `Hotend:` in der Notiz passt nicht zur Variante im Profil |
+| HU | Hotend unklar – mehrere Varianten, aber kein `Hotend:` in der Notiz |
+| HW | `Hotend:` in der Notiz passt zu keiner Variante im Profil |
 
 ## Änderungen
 
@@ -111,7 +111,7 @@ Der Reiter vergleicht die aktuellen Werte mit einem gespeicherten Stand. Neue, e
 
 - **Elternprofil Filament:** ohne Düse, gilt für alle Düsen eines Modells, z. B. `Jayo PETG P1S`.
 - **Kind je Düse:** gemessen und geprüft, Düse im Namen, z. B. `Jayo PETG P1S 0.4`.
-- **kal-Profil:** abgekoppelt, Drucker vor Düse, kal-Zusatz am Ende, z. B. `Jayo PETG grün Plus5 0.4 kal`. Im Notizfeld: `Basis: … · Stand TT.MM.JJ` und bei zwei Hotend-Varianten zusätzlich `Hotend: Standard` bzw. `Hotend: High Flow`.
+- **kal-Profil:** abgekoppelt, Drucker vor Düse, kal-Zusatz am Ende, z. B. `Jayo PETG grün Plus5 0.4 kal`. Im Notizfeld: `Basis: … · Stand TT.MM.JJ` und bei mehreren Hotend-Varianten zusätzlich die gemessene Variante, z. B. `Hotend: Standard`, `Hotend: High Flow`, `Hotend: E3D High Flow` oder `Hotend: Bowden Standard` („Direct Drive“ kann entfallen).
 - **kal-Prozess:** `LH0.20 <Filament> <Drucker> <Düse> kal`, dem kal-Filament zugeordnet.
 
 ## Exportdateien

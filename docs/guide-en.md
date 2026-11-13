@@ -64,7 +64,7 @@ Run Plugins › **Preset Profiler** (or automatically at start). The window dock
   - dotted = system printer without own printer profile
   - red, struck through = bound printer no longer exists
   - model name only (e.g. “P1S”) = valid for all nozzles of that model (condition `printer_model == "…"`)
-- **Brown values with ²** = two values (standard hotend / high-flow hotend). The first is shown; hover to see both.
+- **Brown values with ²** = several values, one per hotend variant (e.g. standard / high flow; up to six in Bambu Studio). The first is shown; hover to see all with variant names.
 - **↻ Reload** reads the profiles again. After saving a profile the overview updates by itself.
 
 ## Checks
@@ -82,8 +82,8 @@ Run Plugins › **Preset Profiler** (or automatically at start). The window dock
 | KW | Correction values set (shrink ≠ 100 % or hole/contour compensation ≠ 0) |
 | K? | Calibrated profile without correction values |
 | KN | Correction values without calibration tag in the name |
-| HU | Hotend unclear – two variants, but no `Hotend:` in the notes |
-| HW | `Hotend:` in the notes does not match the profile's variant |
+| HU | Hotend unclear – several variants, but no `Hotend:` in the notes |
+| HW | `Hotend:` in the notes matches no variant of the profile |
 
 ## Changes
 
@@ -111,7 +111,7 @@ The tab compares current values with a saved state. New, removed and changed val
 
 - **Filament parent:** no nozzle, valid for all nozzles of a model, e.g. `Jayo PETG P1S`.
 - **Child per nozzle:** measured and verified, nozzle in the name, e.g. `Jayo PETG P1S 0.4`.
-- **Calibrated profile:** detached, printer before nozzle, calibration tag at the end, e.g. `Jayo PETG green Plus5 0.4 kal`. In the notes: `Basis: … · Stand DD.MM.YY` and, with two hotend variants, also `Hotend: Standard` or `Hotend: High Flow`.
+- **Calibrated profile:** detached, printer before nozzle, calibration tag at the end, e.g. `Jayo PETG green Plus5 0.4 kal`. In the notes: `Basis: … · Stand DD.MM.YY` and, with several hotend variants, also the measured variant, e.g. `Hotend: Standard`, `Hotend: High Flow`, `Hotend: E3D High Flow` or `Hotend: Bowden Standard` (“Direct Drive” may be omitted).
 - **Calibrated process:** `LH0.20 <filament> <printer> <nozzle> kal`, assigned to the calibrated filament.
 
 ## Export files
