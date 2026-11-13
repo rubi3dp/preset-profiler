@@ -64,7 +64,7 @@ Run Plugins › **Preset Profiler** (or automatically at start). The window dock
   - dotted = system printer without own printer profile
   - red, struck through = bound printer no longer exists
   - model name only (e.g. “P1S”) = valid for all nozzles of that model (condition `printer_model == "…"`)
-- **Brown values with ²** = several values, one per hotend variant (e.g. standard / high flow; up to six in Bambu Studio). The first is shown; hover to see all with variant names.
+- **Values with ²** = several values, one per hotend variant (e.g. standard / high flow; up to six in Bambu Studio). The first is shown; hover to see all with variant names.
 - **↻ Reload** reads the profiles again. After saving a profile the overview updates by itself.
 
 ## Checks

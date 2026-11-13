@@ -64,7 +64,7 @@ Plugins › **Preset Profiler** ausführen (oder automatisch beim Start). Das Fe
   - gepunktet = Systemdrucker ohne eigenes Druckerprofil
   - rot durchgestrichen = gebundener Drucker existiert nicht mehr
   - nur Modellname (z. B. „P1S“) = gilt für alle Düsen dieses Modells (Bedingung `printer_model == "…"`)
-- **Braune Werte mit ²** = mehrere Werte je Hotend-Variante (z. B. Standard / High Flow; in Bambu Studio bis zu sechs). Angezeigt wird der erste, Maus drauf zeigt alle mit Variantennamen.
+- **Werte mit ²** = mehrere Werte je Hotend-Variante (z. B. Standard / High Flow; in Bambu Studio bis zu sechs). Angezeigt wird der erste, Maus drauf zeigt alle mit Variantennamen.
 - **↻ Neu einlesen** liest die Profile neu ein. Nach dem Speichern eines Profils aktualisiert sich die Übersicht von selbst.
 
 ## Prüfungen
