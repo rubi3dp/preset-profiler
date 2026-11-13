@@ -31,22 +31,25 @@ The plugin **only reads**. It never changes profiles, never goes online and only
 
 ## Setup
 
-Run Plugins › **Preset Profiler – Settings** (shown as “Einstellungen” while the plugin language is German):
+Run Plugins › **Preset Profiler – Settings** (shown as “Einstellungen” while the plugin language is German) or click **⚙ Settings** in the overview:
 
 | Field | Meaning |
 |---|---|
 | Target folder | CSV and HTML export goes here. Empty = Orca's plugin folder only. |
 | Calibration tag | Word in the profile name that marks calibrated profiles, e.g. `kal`. Empty = off. |
-| Language | German or English (can be switched in the window at any time). |
+| Language | German or English (can be switched in the window at any time; the choice is remembered). |
 | Data sheet folder | Data sheets are written here. |
 | Open when Orca starts | The overview opens after Orca starts (reads only, writes nothing). |
 | Export when Orca starts | Export to the target folder at start. |
 | Notify about changed profiles at start | If there are changes, the overview opens on the “Changes” tab – or a message appears if the overview does not open automatically. |
+| Read Bambu Studio presets | Also reads your own presets from Bambu Studio (read-only). Restart Orca afterwards and confirm the read access prompt. |
 | Data sheet fields | Two free fields (label + default), e.g. “Author” / “Project”. |
 
 **About folders:** Orca does not offer plugins a folder picker – please paste the path. Mac: select the folder in Finder, ⌥⌘C. Windows: select the folder, Ctrl+Shift+C. The plugin never creates folders.
 
 After changing a folder, **restart Orca** and confirm the folder access prompt. Orca only grants folder access at start.
+
+**Bambu Studio:** Studio presets are tagged “Studio” (filter “All sources”). Bindings and checks refer to Studio printers only. Studio does not store pressure advance in the filament preset – the plugin reads it from an `M900 K…` line in the filament start G-code. Studio only has XY shrinkage.
 
 ## The window
 

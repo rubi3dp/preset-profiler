@@ -31,22 +31,25 @@ Das Plugin **liest nur**. Es ändert keine Profile, geht nicht ins Internet und 
 
 ## Einrichten
 
-Plugins › **Preset Profiler – Einstellungen** ausführen:
+Plugins › **Preset Profiler – Einstellungen** ausführen oder in der Übersicht auf **⚙ Einstellungen** klicken:
 
 | Feld | Bedeutung |
 |---|---|
 | Zielordner | Hierhin gehen CSV- und HTML-Export. Leer = nur in den Plugin-Ordner von Orca. |
 | kal-Zusatz | Wort im Profilnamen, das kalibrierte Profile kennzeichnet, z. B. `kal`. Leer = aus. |
-| Sprache | Deutsch oder Englisch (im Fenster jederzeit umschaltbar). |
+| Sprache | Deutsch oder Englisch (im Fenster jederzeit umschaltbar, die Wahl wird gemerkt). |
 | Datenblatt-Ordner | Hierhin werden Datenblätter geschrieben. |
 | Beim Start öffnen | Übersicht öffnet sich nach dem Start von Orca (nur einlesen, nichts schreiben). |
 | Beim Start exportieren | Export beim Start in den Zielordner. |
 | Beim Start auf geänderte Profile hinweisen | Bei Änderungen startet die Übersicht auf dem Reiter „Änderungen“ – oder es kommt eine Meldung, wenn die Übersicht nicht automatisch öffnet. |
+| Bambu-Studio-Profile einlesen | Liest zusätzlich die eigenen Profile aus Bambu Studio (nur lesen). Danach Orca neu starten und den Lesezugriff bestätigen. |
 | Datenblatt-Felder | Zwei freie Felder (Beschriftung + Vorgabe), z. B. „Ersteller“ / „Projekt“. |
 
 **Wichtig zu den Ordnern:** Orca bietet Plugins keine Ordnerauswahl – den Pfad bitte einfügen. Mac: Ordner im Finder markieren, ⌥⌘C. Windows: Ordner markieren, Strg+Umschalt+C. Ordner werden vom Plugin nicht angelegt.
 
 Nach dem Ändern eines Ordners **Orca neu starten** und die Abfrage zum Ordnerzugriff bestätigen. Orca vergibt Ordnerfreigaben nur beim Start.
+
+**Bambu Studio:** Studio-Profile erscheinen mit der Kennzeichnung „Studio“ (Filter „Alle Quellen“). Zuordnung und Prüfungen beziehen sich nur auf Studio-Drucker. Den Pressure Advance speichert Studio nicht im Filamentprofil – das Plugin liest ihn aus einem `M900 K…` im Filament-Start-G-Code. Studio kennt Schrumpf nur für XY.
 
 ## Das Fenster
 
