@@ -23,7 +23,7 @@ Plugin für OrcaSlicer: Übersicht, Prüfungen und Datenblätter für die eigene
 **Matrix** – which filament fits which printer, K = calibrated preset; O / B = source slicer
 ![Matrix](docs/img/matrix.png)
 
-**Details** – click a row for all values; ² marks values per hotend variant (e.g. Standard / High Flow)
+**Details** – click a row for all values, with search and “Differences only”; ² in the list marks values per hotend variant (e.g. Standard / High Flow)
 ![Details](docs/img/details.png)
 
 **Checks** – "Issues only" filters presets with findings
