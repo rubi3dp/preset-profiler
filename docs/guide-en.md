@@ -42,14 +42,14 @@ Run Plugins › **Preset Profiler – Settings** (shown as “Einstellungen” w
 | Open when Orca starts | The overview opens after Orca starts (reads only, writes nothing). |
 | Export when Orca starts | Export to the target folder at start. |
 | Notify about changed profiles at start | If there are changes, the overview opens on the “Changes” tab – or a message appears if the overview does not open automatically. |
-| Read Bambu Studio presets | Also reads your own presets from Bambu Studio (read-only). Restart Orca afterwards and confirm the read access prompt. |
+| Also read presets from | Also reads your own presets from other slicers (currently Bambu Studio), read-only. Restart Orca afterwards and confirm the read access prompt. |
 | Data sheet fields | Two free fields (label + default), e.g. “Author” / “Project”. |
 
 **About folders:** Orca does not offer plugins a folder picker – please paste the path. Mac: select the folder in Finder, ⌥⌘C. Windows: select the folder, Ctrl+Shift+C. The plugin never creates folders.
 
 After changing a folder, **restart Orca** and confirm the folder access prompt. Orca only grants folder access at start.
 
-**Bambu Studio:** The first column shows the source: O = OrcaSlicer, B = Bambu Studio. Marks (cal, printers, K) use the colour of the respective slicer. The buttons All / OrcaSlicer / Bambu Studio switch the view; the choice is remembered. Bindings and checks refer to Studio printers only. Bambu Studio determines pressure advance automatically – Studio presets therefore show “auto”. Studio only has XY shrinkage.
+**Other slicers:** The first column shows the source: O = OrcaSlicer, B = Bambu Studio. Marks (cal, printers, K) use the colour of the respective slicer. The buttons OrcaSlicer / Bambu Studio / All switch the view; Orca presets are shown at start. Data sheets are named “O – …” or “B – …”; sheets with the old name are listed once for deletion. Bindings and checks refer to Studio printers only. Bambu Studio determines pressure advance automatically – Studio presets therefore show “auto”. Studio only has XY shrinkage.
 
 ## The window
 

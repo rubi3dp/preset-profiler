@@ -42,14 +42,14 @@ Plugins › **Preset Profiler – Einstellungen** ausführen oder in der Übersi
 | Beim Start öffnen | Übersicht öffnet sich nach dem Start von Orca (nur einlesen, nichts schreiben). |
 | Beim Start exportieren | Export beim Start in den Zielordner. |
 | Beim Start auf geänderte Profile hinweisen | Bei Änderungen startet die Übersicht auf dem Reiter „Änderungen“ – oder es kommt eine Meldung, wenn die Übersicht nicht automatisch öffnet. |
-| Bambu-Studio-Profile einlesen | Liest zusätzlich die eigenen Profile aus Bambu Studio (nur lesen). Danach Orca neu starten und den Lesezugriff bestätigen. |
+| Weitere Slicer einlesen | Liest zusätzlich die eigenen Profile weiterer Slicer (derzeit Bambu Studio), nur lesen. Danach Orca neu starten und den Lesezugriff bestätigen. |
 | Datenblatt-Felder | Zwei freie Felder (Beschriftung + Vorgabe), z. B. „Ersteller“ / „Projekt“. |
 
 **Wichtig zu den Ordnern:** Orca bietet Plugins keine Ordnerauswahl – den Pfad bitte einfügen. Mac: Ordner im Finder markieren, ⌥⌘C. Windows: Ordner markieren, Strg+Umschalt+C. Ordner werden vom Plugin nicht angelegt.
 
 Nach dem Ändern eines Ordners **Orca neu starten** und die Abfrage zum Ordnerzugriff bestätigen. Orca vergibt Ordnerfreigaben nur beim Start.
 
-**Bambu Studio:** In der ersten Spalte zeigt ein Kästchen die Quelle: O = OrcaSlicer, B = Bambu Studio. Markierungen (kal, Drucker, K) erscheinen in der Farbe des jeweiligen Slicers. Mit den Knöpfen Alle / OrcaSlicer / Bambu Studio lässt sich die Ansicht umschalten; die Wahl wird gemerkt. Zuordnung und Prüfungen beziehen sich nur auf Studio-Drucker. Den Pressure Advance ermittelt Bambu Studio automatisch – bei Studio-Profilen steht deshalb „auto“. Studio kennt Schrumpf nur für XY.
+**Weitere Slicer:** In der ersten Spalte zeigt ein Kästchen die Quelle: O = OrcaSlicer, B = Bambu Studio. Markierungen (kal, Drucker, K) erscheinen in der Farbe des jeweiligen Slicers. Mit den Knöpfen OrcaSlicer / Bambu Studio / Alle lässt sich die Ansicht umschalten; beim Start sind die Orca-Profile aktiv. Datenblätter heißen „O – …“ bzw. „B – …“; Blätter mit altem Namen meldet das Plugin einmal zum Löschen. Zuordnung und Prüfungen beziehen sich nur auf Studio-Drucker. Den Pressure Advance ermittelt Bambu Studio automatisch – bei Studio-Profilen steht deshalb „auto“. Studio kennt Schrumpf nur für XY.
 
 ## Das Fenster
 
